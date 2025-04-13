@@ -180,28 +180,32 @@ local function CreateConfigWindow()
                 local movableButton = AceGUI:Create("Button")
                 movableButton:SetFullWidth(true)
                 movableButton:SetHeight(30)
-                
+
                 -- Local function to update button text
                 local function updateButtonText()
+                    -- _LOCK değişkeninin addon'un başka bir yerinde
+                    -- hareket kilidini kontrol ettiği varsayılıyor.
                     if _LOCK then
-                        movableButton:SetText("Disable Frame Movement")
+                        movableButton:SetText("Disable Frame Movement") -- Çerçeve Hareketi Devre Dışı Bırak
                     else
-                        movableButton:SetText("Enable Frame Movement")
+                        movableButton:SetText("Enable Frame Movement")  -- Çerçeve Hareketi Etkinleştir
                     end
                 end
-                
+
                 -- Set initial text
                 updateButtonText()
-                
+
                 movableButton:SetCallback("OnClick", function()
-                    -- Use the same function as the old /omf command
+                    -- ns.ToggleMovable fonksiyonunun addon'un başka bir yerinde
+                    -- çerçeve hareketini açıp kapattığı varsayılıyor.
                     local success = ns.ToggleMovable()
-                    
+
                     -- Update button text
                     updateButtonText()
-                    
+
                     -- Print status message
                     if success ~= nil then
+                        -- _LOCK değişkeninin durumuna göre mesaj yazdırılıyor.
                         print("Frame Movement: " .. (_LOCK and "Enabled" or "Disabled"))
                     end
                 end)
@@ -212,6 +216,7 @@ local function CreateConfigWindow()
                 guideGroup.frame:SetPoint("BOTTOMRIGHT", rightPanel, "BOTTOMRIGHT", -10, 10)
                 guideGroup.frame:Show()
             end
+
         end)
 
         return button
