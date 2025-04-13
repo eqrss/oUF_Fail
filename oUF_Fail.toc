@@ -1,0 +1,34 @@
+## Interface: 110100
+## Author: yuse
+## Title: |cffea00ffoUF_Fail|r
+## Version: 1.7 (2024.07.28)
+## Notes: Simple Layout for oUF 
+
+## OptionalDeps: oUF_WeaponEnchant, oUF_Experience, oUF_Reputation, oUF_CombatFeedback, oUF_FloatingCombatFeedback, LibHealComm-4.0, LibStub, CallbackHandler-1.0
+## X-Category: UnitFrame
+
+## X-SavedVariables: bb08df87101dd7f2161e5b77cf750f753c58ef1b, oUF_FailDB, oUF_FailPositions, oUF_FailConfig
+
+## SavedVariables: oUF_FailDB, oUF_FailPositions
+## SavedVariablesPerCharacter: oUF_FailDBPC
+## X-SlashCmdList: /of
+
+
+Libraries\Libs.xml
+
+cfg.lua
+tags.lua
+UI.lua
+
+
+lib.lua
+core.lua
+
+Tooltip.lua
+main.lua
+chat.lua
+characterinfo.lua
+movable.lua
+
+
+

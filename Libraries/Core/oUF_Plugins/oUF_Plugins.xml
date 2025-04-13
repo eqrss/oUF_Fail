@@ -1,0 +1,20 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+	<Script file='oUF_AuraBars.lua'/>
+	<Script file='oUF_AuraHighlight.lua'/>
+	<Script file='oUF_AuraWatch.lua'/>
+	<Script file='oUF_Cutaway.lua'/>
+	<Script file='oUF_Fader.lua'/>
+	<Script file='oUF_RaidDebuffs.lua'/>
+	<Script file='oUF_Trinkets.lua'/>
+	<Script file='oUF_PVPSpecIcons.lua'/>
+	<Script file='oUF_EnergyManaRegen.lua'/>
+	<Script file='oUF_Swing.lua'/>
+	
+	<Script file='DebuffHighlight.lua'/>
+	<Script file='smooth.lua'/>
+	<Script file='castbar.lua'/>
+	<Script file='ComboPoints.lua'/>
+	<Include file='PartyPets.xml'/>
+	
+	<Include file="oUF_HealComm4\oUF_HealComm4.lua"/>
+</Ui>
